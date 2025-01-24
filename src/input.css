@@ -34,7 +34,7 @@
   @apply text-xs text-center rounded-full px-1.5 bg-blue-600 text-white;
 }
 .alex-topmenu-expanded {
-  @apply absolute py-4 top-[60px] z-50 w-full text-start p-6 bg-white animate-sideLeft;
+  @apply absolute py-4 top-[48px] z-50 w-full text-start p-6 bg-white animate-sideLeft;
 }
 
 .alex__subheadline {
@@ -47,7 +47,7 @@
   @apply w-8 h-px bg-gray-300;
 }
 .alex__button {
-  @apply text-center uppercase tracking-widest rounded-sm font-semibold py-4 px-8  cursor-pointer hover:bg-opacity-95;
+  @apply text-center uppercase tracking-widest rounded-sm font-semibold py-2 px-8 cursor-pointer hover:bg-opacity-95;
 }
 .alex__link{
   @apply hover:text-blue-700;

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="demo_icon.gif" type="image/gif" sizes="16x16">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" type="text/css" rel="stylesheet">
+  <title>Books | Alexhuynhdev</title>
+</head>
+
+<body>
+
+  <div id="root">
+
+    <!-- Conten wrapper #1 -->
+
+    <div class="content-wrapper alex__parallax font-Karla text-base mx-auto xl:px-8 px-0 ">
+      <header class="py-6 lg:py-10 px-0 lg:px-8 w-full mx-auto max-w-screen-2xl" id="home">
+        <nav class="flex flex-row justify-between items-center relative">
+          <div
+            class="logo px-6 lg:px-0 text-start text-lg lg:text-xl font-mono cursor-pointer text-blue-900 font-semibold">
+            <a href="./index.html">
+              Alexhuynhdev.
+            </a>
+          </div>
+          <ul id="alex-top-menu"
+            class="basis-3/6 hidden lg:flex lg:items-start lg:justify-end lg:gap-8 uppercase text-base text-gray-600 font-medium px-0">
+            <li class="alex-top-menu-item">
+              <a href="./books.html">Books</a>
+            </li>
+            <li class="alex-top-menu-item">
+              <a href="./projects.html">Project</a>
+            </li>
+            <li class="alex-top-menu-item">
+              <a href="./contact.html">Contact</a>
+            </li>
+          </ul>
+          <div class="basis-1/6 lg:hidden flex items-center justify-center cursor-pointer px-2 sm:pl-6">
+            <svg id="alex-toggle-top-menu" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+          </div>
+        </nav>
+      </header>
+
+      <div class="more-books w-[80%] md:w-[70%] lg:w-[60%] mx-auto mb-6 max-w-screen-2xl">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-4">
+          <div class="alex-books-card ">
+            <div class="h-[400px] bg-[url('./img/books/book1.png')] bg-cover bg-no-repeat bg-center text-center">
+              <a href="https://aaronyeo.org/books_/JavaScript/Eric%20T.%20Freeman,%20Elisabeth%20Robson%20-%20Head%20First%20JavaScript%20Programming_%20A%20Brain-Friendly%20Guide-O%E2%80%99Reilly%20Media%20(2014).pdf"
+                alt="alexhuynh" target="_blank">
+                <div
+                  class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
+                  <div
+                    class="alex__button absolute hidden group-hover:block group-hover:animate-fadeIn w-11/12 bottom-4 left-1/2 -translate-x-1/2 text-blue-950 bg-white text-[12px]">
+                    See PDF</div>
+                </div>
+              </a>
+            </div>
+            <div class="text-center my-8">
+              <a href="" alt="product-price">
+                <div class="text-xl mb-2">Head First JavaScript Programming</div>
+              </a>
+            </div>
+          </div>
+          <div class="alex-books-card ">
+            <div class="h-[400px]  bg-[url('./img/books/book2.png')]  bg-cover bg-no-repeat bg-center text-center">
+              <a href="https://dl.ebooksworld.ir/books/React.Up.and.Running.2nd.Edition.Stoyan.Stefanov.OReilly.9781492051466.EBooksWorld.ir.pdf"
+                target="_blank" alt="alexhuynh">
+                <div
+                  class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
+                  <div
+                    class="alex__button absolute hidden group-hover:block group-hover:animate-fadeIn w-11/12 bottom-4 left-1/2 -translate-x-1/2 text-blue-950 bg-white text-[12px]">
+                    See PDF</div>
+                </div>
+              </a>
+            </div>
+            <div class="text-center my-8">
+              <a href="" alt="product-price">
+                <div class="text-xl mb-3">React: up and Running</div>
+              </a>
+            </div>
+          </div>
+          <div class="alex-books-card ">
+            <div class="h-[400px]  bg-[url('./img/books/book3.png')]  bg-cover bg-no-repeat bg-center text-center">
+              <a href="https://ia801507.us.archive.org/26/items/GameProgramming/building-javascript-games.pdf"
+                target="_blank" alt="alexhuynh">
+                <div
+                  class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
+                  <div
+                    class="alex__button absolute hidden group-hover:block group-hover:animate-fadeIn w-11/12 bottom-4 left-1/2 -translate-x-1/2 text-blue-950 bg-white text-[12px]">
+                    See PDF</div>
+                </div>
+              </a>
+            </div>
+            <div class="text-center my-8">
+              <a href="" alt="product-price">
+                <div class="text-xl mb-3">Building Javascript Games</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- End Root -->
+</body>
+
+</html>
+<script src="./main.js" type="text/javascript"></script>
