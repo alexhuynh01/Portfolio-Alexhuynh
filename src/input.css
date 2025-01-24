@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom CSS */
+*{
+  ::-webkit-scrollbar {
+    width: 10px; /* Độ rộng của scrollbar */
+    height: 10px; /* Độ cao của scrollbar ngang */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(30, 58, 138, 0.7); /* Màu scrollbar */
+    border-radius: 0; /* Đặt bo góc thành 0 để tạo hình vuông */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Màu nền của track scrollbar */
+  }
+}
+
+.alex-top-menu-item {
+  @apply py-1 hover:text-gray-900 relative after:lg:absolute after:lg:bottom-0 after:lg:left-0 after:lg:bg-blue-600 after:lg:h-0.5 after:lg:w-0 hover:after:lg:w-full after:lg:transition-all after:lg:ease-linear after:lg:duration-300;
+}
+.alex-top-menu-item-active {
+  @apply text-gray-900;
+}
+.alex-icon {
+  @apply w-5 h-5 inline-block;
+}
+.alex-badge-circle {
+  @apply text-xs text-center rounded-full px-1.5 bg-blue-600 text-white;
+}
+.alex-topmenu-expanded {
+  @apply absolute py-4 top-[60px] z-50 w-full text-start p-6 bg-white animate-sideLeft;
+}
+
+.alex__subheadline {
+  @apply flex justify-center items-center my-20;
+}
+.alex__subheadline-decor-label {
+  @apply uppercase mx-3 tracking-widest font-semibold text-gray-600 text-xs text-center;
+}
+.alex__subheadline-decor-line {
+  @apply w-8 h-px bg-gray-300;
+}
+.alex__button {
+  @apply text-center uppercase tracking-widest rounded-sm font-semibold py-4 px-8  cursor-pointer hover:bg-opacity-95;
+}
+.alex__link{
+  @apply hover:text-blue-700;
+}
+/* CSS */
+#root {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 2px;
+  
+  /* ... */
+  background-color: #ffffff; 
+  background-image: radial-gradient(#e8e8ea 1.5px, transparent 2px); 
+  background-size: 40px 40px;
+}
+.alex__parallax,
+.alex__parallax-active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+}
+.alex__parallax-active {
+  height: 30vh;
+}
+.alex__parallax {
+  height: auto;
+  z-index: 999;
+
+}
+.alex__parallax-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+@media screen(xl) {
+  .alex__parallax-active {
+    height: 60vh;
+    transform-style: preserve-3d;
+  }
+  .alex__parallax-image {
+    transform: translateZ(1px) scale(.5);
+  }
+}
+
