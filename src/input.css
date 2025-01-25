@@ -7,17 +7,17 @@
 /* Custom CSS */
 *{
   ::-webkit-scrollbar {
-    width: 10px; /* Độ rộng của scrollbar */
-    height: 10px; /* Độ cao của scrollbar ngang */
+    width: 10px; 
+    height: 10px; 
   }
   
   ::-webkit-scrollbar-thumb {
-    background-color: rgba(30, 58, 138, 0.7); /* Màu scrollbar */
-    border-radius: 0; /* Đặt bo góc thành 0 để tạo hình vuông */
+    background-color: rgba(30, 58, 138, 0.7); 
+    border-radius: 0; 
   }
   
   ::-webkit-scrollbar-track {
-    background-color: #f1f1f1; /* Màu nền của track scrollbar */
+    background-color: #f1f1f1; 
   }
 }
 
@@ -34,7 +34,7 @@
   @apply text-xs text-center rounded-full px-1.5 bg-blue-600 text-white;
 }
 .alex-topmenu-expanded {
-  @apply absolute py-4 top-[48px] z-50 w-full text-start p-6 bg-white animate-sideLeft;
+  @apply absolute py-4 top-[48px] z-50 w-full h-[100vh] text-start p-6 bg-white animate-sideLeft;
 }
 
 .alex__subheadline {
