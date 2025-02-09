@@ -34,8 +34,9 @@
   @apply text-xs text-center rounded-full px-1.5 bg-blue-600 text-white;
 }
 .alex-topmenu-expanded {
-  @apply absolute py-4 top-[48px] z-50 w-full h-[100vh] text-start p-6 bg-white animate-sideLeft;
+  @apply absolute py-4 top-[48px] z-50 w-full text-start p-6 bg-white animate-sideLeft;
 }
+
 
 .alex__subheadline {
   @apply flex justify-center items-center my-20;
@@ -54,7 +55,6 @@
 }
 /* CSS */
 #root {
-  height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
   perspective: 2px;

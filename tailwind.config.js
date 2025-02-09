@@ -21,6 +21,7 @@ module.exports = {
       keyframes: {
         sideDown: { "0%": { transform: "transLateY(-100%)" }, "100%": { transform: "transLateY(0)" }, },
         sideLeft: { "0%": { transform: "translateX(100%)" }, "100%": { transform: "translateX(0)" }, },
+        sideRight: { "0%": { transform: "translateX(-100%)" }, "100%": { transform: "translateX(0)" },},
         fadeIn: { from: { opacity: 0 }, to: { opacity: 1 } },
         slideUp: {
           '0%': { transform: 'translate3d(0px,8px,0px)', opacity: 0 },
