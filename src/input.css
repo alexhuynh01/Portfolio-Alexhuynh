@@ -63,6 +63,7 @@
   background-color: #ffffff; 
   background-image: radial-gradient(#e8e8ea 1.5px, transparent 2px); 
   background-size: 40px 40px;
+  background-attachment: fixed;
 }
 .alex__parallax,
 .alex__parallax-active {
