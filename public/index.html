@@ -9,6 +9,7 @@
   <title>Home | Alexhuynhdev</title>
 </head>
 
+
 <body>
 
   <div id="root">
@@ -18,12 +19,16 @@
     <div class="content-wrapper alex__parallax font-Karla text-base mx-auto px-0 ">
       <header class="py-6 lg:py-10 px-0 lg:px-8 w-full mx-auto max-w-screen-2xl" id="home">
         <nav class="flex flex-row justify-between items-center relative">
+          <!-- Logo typing -->
           <div
-            class="logo px-6 lg:px-0 text-start text-lg lg:text-xl font-mono cursor-pointer text-blue-900 font-semibold">
-            <a href="./index.html">
-              Alexhuynhdev.
+            class="logo px-6 lg:px-0 text-start text-lg lg:text-xl font-mono cursor-pointer text-blue-900 font-semibold flex items-center">
+            <a href="./index.html" class="relative flex items-center">
+              <span id="typing-logo" class="text-lg lg:text-xl font-mono text-blue-900"></span>
+              <span id="typing-cursor" class="ml-1 text-lg lg:text-xl font-mono text-blue-900"></span>
             </a>
           </div>
+
+          <!-- Menu -->
           <ul id="alex-top-menu"
             class="basis-3/6 hidden lg:flex lg:items-start lg:justify-end lg:gap-8 uppercase text-base text-gray-600 font-medium px-0">
             <li class="alex-top-menu-item">
@@ -32,23 +37,9 @@
             <li class="alex-top-menu-item">
               <a href="./projects.html">Projects</a>
             </li>
-            <!-- <li class="alex-top-menu-item">
-              <a href="./contact.html">Contact</a>
-            </li> -->
           </ul>
-          <!-- <ul
-            class="basis-3/6 lg:basis-1/6 flex lg:justify-start justify-end items-center ml-16 uppercase text-lg text-gray-600 font-medium">
-            <li class="alex-top-menu-item">
-              <a href="#" class="flex items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="alex-icon">
-                  <path
-                    d="M2.25 2.25a.75.75 0 000 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 00-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 000-1.5H5.378A2.25 2.25 0 017.5 15h11.218a.75.75 0 00.674-.421 60.358 60.358 0 002.96-7.228.75.75 0 00-.525-.965A60.864 60.864 0 005.68 4.509l-.232-.867A1.875 1.875 0 003.636 2.25H2.25zM3.75 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zM16.5 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0z" />
-                </svg>
-                <span class="mx-2">Card</span>
-                <span class="alex-badge-circle">01</span>
-              </a>
-            </li>
-          </ul> -->
+
+          <!-- Mobile menu toggle -->
           <div class="basis-1/6 lg:hidden flex items-center justify-center cursor-pointer px-2 sm:pl-6">
             <svg id="alex-toggle-top-menu" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
               stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -57,14 +48,56 @@
           </div>
         </nav>
       </header>
+      <style>
+        @keyframes blink {
+
+          0%,
+          50%,
+          100% {
+            opacity: 1;
+          }
+
+          25%,
+          75% {
+            opacity: 0;
+          }
+        }
+
+        @keyframes blinkColor {
+
+          0%,
+          100% {
+            color: rgba(30, 58, 138, 1);
+          }
+
+          /* xanh đậm (#1e3a8a ~ text-blue-900) */
+          50% {
+            color: rgba(30, 58, 138, 0.4);
+          }
+
+          /* xanh nhạt (40% opacity) */
+        }
+
+        #typing-cursor {
+          animation: blinkColor 1.2s infinite;
+          /* đổi màu nhấp nháy */
+        }
+
+        .animate-blink {
+          animation: blink 1s infinite;
+        }
+      </style>
+
       <div class="p-4 lg:p-8">
         <div class="w-full h-full flex justify-center items-center leading-loose ">
           <div class="text-gray-600 mx-2 text-justify max-w-2xl  font-medium">
-            <div class="text-3xl lg:text-5xl text-gray-700 font-mono mb-7 lg:py-0 font-bold tracking-tight ">
-              Hello, World!
+            <div id="typing-content" class="text-3xl lg:text-5xl text-gray-700 font-mono mb-7 lg:py-0 font-bold tracking-tight ">
+              <!-- Hello, World! -->
             </div>
             <p class="text-lg lg:text-[1.25rem] mb-4 leading-loose">Hi, my name is Alex Huynh. Full name is Huynh Trong
-              Tin. I&#39;m currently living and working in Can Tho City. I spent 3 years studying Software Engineering at APC College. Right now, I&#39;m working as a Frontend Developer and striving to grow into a Fullstack Developer.
+              Tin. I&#39;m currently living and working in Can Tho City. I spent 3 years studying Software Engineering
+              at APC College. Right now, I&#39;m working as a Frontend Developer and striving to grow into a Fullstack
+              Developer.
             </p>
             <p class="text-lg lg:text-[1.25rem] mb-4 leading-loose">In my free time, I enjoy reading books and
               photography.</p>
@@ -73,7 +106,7 @@
             <p class="py-2 text-lg lg:text-xl">
               Find me on:
             </p>
-            <div class="flex items-center flex-wrap gap-5 mb-10 justify-between lg:justify-start">
+            <div class="flex items-center flex-wrap mb-10 justify-between lg:justify-start gap-5">
               <!-- Github -->
               <a class="flex space-x-2 alex-top-menu-item" href="https://github.com/alexhuynh01" target="_blank">
                 <span class="text-3xl">
@@ -98,11 +131,11 @@
                     </path>
                   </svg>
                 </span>
-                <span class="text-lg font-medium">
+                <!-- <span class="text-lg font-medium">
                   X
-                </span>
+                </span> -->
               </a>
-              <!-- Linkedin -->
+              <!-- LinkedIn -->
               <a class="flex space-x-2 alex-top-menu-item" href="https://www.linkedin.com/in/alex-huynh-884341296/"
                 target="_blank">
                 <span class="text-3xl">
@@ -114,7 +147,7 @@
                   </svg>
                 </span>
                 <span class="text-lg font-medium">
-                  Linkedin
+                  LinkedIn
                 </span>
               </a>
               <!-- Gmail -->
