@@ -47,6 +47,46 @@
           </div>
         </nav>
       </header>
+      <style>
+        @keyframes blink {
+
+          0%,
+          50%,
+          100% {
+            opacity: 1;
+          }
+
+          25%,
+          75% {
+            opacity: 0;
+          }
+        }
+
+        @keyframes blinkColor {
+
+          0%,
+          100% {
+            color: rgba(30, 58, 138, 1);
+          }
+
+          /* xanh đậm (#1e3a8a ~ text-blue-900) */
+          50% {
+            color: rgba(30, 58, 138, 0.4);
+          }
+
+          /* xanh nhạt (40% opacity) */
+        }
+
+        #typing-cursor {
+          animation: blinkColor 1.2s infinite;
+          margin-left: -5px;
+          /* đổi màu nhấp nháy */
+        }
+
+        .animate-blink {
+          animation: blink 1s infinite;
+        }
+      </style>
       <p class="text-3xl lg:text-5xl text-gray-700 font-mono mb-7 lg:py-0 font-bold tracking-tight ">My Projects</p>
 
 
